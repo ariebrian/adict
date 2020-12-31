@@ -82,15 +82,16 @@
                          <div class="home-info">
                               <h3>The Anti-Mainstream Dictionary</h3>
                               <h1>Expand Your Vocabulary <br>Be A Native Speaker!</h1>
-                              <form action="" method="get" class="online-form">
-                                   <input type="text" name="text" class="form-control" placeholder="Enter Keywords" style="width: 550px;" required>
-                                   <h2></h2>
-                                   <select name="cars" id="cars" class="form-control" style="width: 350px;">
-                                        <option value="volvo">Pharasal Verbs</option>
-                                        <option value="saab">Engish Idioms & Terms</option>
-                                        <option value="mercedes">Slang Words</option>
+                              <form action="<?= base_url('/search') ?>" method="post" class="online-form">
+                              <?= csrf_field() ?>
+                                   <input type="text" name="word" class="form-control" placeholder="Enter Keywords" style="width: 550px;" required>
+                                   <h3></h3>
+                                   <select name="category" id="category" class="form-control" style="width: 350px;">
+                                        <option value="1">Pharasal Verbs</option>
+                                        <option value="3">Engish Idioms & Terms</option>
+                                        <option value="2">Slang Words</option>
                                    </select>
-                                   <button type="submit" class="form-control">Search</button>
+                                   <input type="submit" class="form-control" value="Search" />
                               </form>
                               <br>
                               <br>
