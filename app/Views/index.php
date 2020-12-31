@@ -57,9 +57,9 @@
                               <div class="dropdown">
                                    <button class="dropbtn666">Glossarium</button>
                                    <div class="dropdown-content">
-                                        <a href="<?= base_url('/list') ?>">Pharasal Verbs List</a>
+                                        <a href="<?= base_url('/list/1') ?>">Pharasal Verbs List</a>
                                         <a href="#">English Idioms and Terms List</a>
-                                        <a href="#">Slang Words</a>
+                                        <a href="<?= base_url('/list/2') ?>">Slang Words</a>
                                    </div>
                               </div>
                          </li>

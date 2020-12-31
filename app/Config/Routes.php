@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/result', 'Result::index');
 $routes->post('/search', 'Home::search');
-$routes->get('/list', 'List::index');
+$routes->get('/list/(:any)', 'Home::list');
 
 /**
  * --------------------------------------------------------------------

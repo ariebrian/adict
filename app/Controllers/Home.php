@@ -23,6 +23,14 @@ class Home extends BaseController
 		
 	}
 
+	public function list(){
+		$id_cat = $this->request->uri->getSegment(2);
+		$model = model('App\Models\Data');
+		$data = $model->where('id_kategori', $id_cat)->findAll();
+		$result['data'] = $data;
+		return view('list', $result);
+	}
+
 	//--------------------------------------------------------------------
 
 }

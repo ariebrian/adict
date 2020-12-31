@@ -18,7 +18,7 @@
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/main.css">
      <link rel="stylesheet" href="css/util.css">
-     <link rel="stylesheet" href="css/datatables.css">
+     <!-- <link rel="stylesheet" href="css/datatables.css"> -->
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-style.css">
 
@@ -47,7 +47,7 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand">A-Dictionary</a>
+                    <a href="#" class="navbar-brand">A-Dictionary</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -95,23 +95,15 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php foreach ($data as $key => $value) { ?>
                                         <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">Lawrence Scott</td>
-                                            <td class="column100 column2" data-column="column2">8:00 AM</td>
-                                            <td class="column100 column3" data-column="column3">--</td>
+                                            <td class="column100 column1" data-column="column1"><?php echo $value['id']; ?></td>
+                                            <td class="column100 column2" data-column="column2"><?php echo $value['inggris']; ?></td>
+                                            <td class="column100 column3" data-column="column3"><?php echo $value['indonesia']; ?></td>
                                         </tr>
+                                   <?php } ?>
             
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">Jane Medina</td>
-                                            <td class="column100 column2" data-column="column2">--</td>
-                                            <td class="column100 column3" data-column="column3">5:00 PM</td>
-                                        </tr>
-            
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">Billy Mitchell</td>
-                                            <td class="column100 column2" data-column="column2">9:00 AM</td>
-                                            <td class="column100 column3" data-column="column3">--</td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -152,7 +144,7 @@
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
-     <script src="js/datatables.js"></script>
+     <!-- <script src="js/datatables.js"></script> -->
 
 </body>
 </html>
